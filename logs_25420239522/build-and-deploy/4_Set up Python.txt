@@ -1,0 +1,6 @@
+﻿2024-06-28T08:50:25.7338560Z ##[group]Run actions/setup-python@v2
+2024-06-28T08:50:25.7338964Z with:
+2024-06-28T08:50:25.7339194Z   python-version: 3.9
+2024-06-28T08:50:25.7339606Z   token: ***
+2024-06-28T08:50:25.7339840Z ##[endgroup]
+2024-06-28T08:50:25.8618094Z Successfully setup CPython (3.9.19)

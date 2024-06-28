@@ -1,0 +1,12 @@
+﻿2024-06-28T08:50:29.0576570Z ##[warning]Unexpected input(s) 'runtime-stack', valid inputs are ['app-name', 'publish-profile', 'slot-name', 'package', 'images', 'configuration-file', 'startup-command', 'resource-group-name']
+2024-06-28T08:50:29.0589003Z ##[group]Run azure/webapps-deploy@v2
+2024-06-28T08:50:29.0589335Z with:
+2024-06-28T08:50:29.0589577Z   app-name: fastapi-server
+2024-06-28T08:50:29.0589865Z   package: .
+2024-06-28T08:50:29.0590117Z   runtime-stack: PYTHON|3.9
+2024-06-28T08:50:29.0590417Z   slot-name: production
+2024-06-28T08:50:29.0590674Z env:
+2024-06-28T08:50:29.0590994Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.19/x64
+2024-06-28T08:50:29.0591500Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.19/x64/lib
+2024-06-28T08:50:29.0591902Z ##[endgroup]
+2024-06-28T08:50:30.7213650Z ##[error]Deployment Failed, Error: Resource fastapi-server doesn't exist.

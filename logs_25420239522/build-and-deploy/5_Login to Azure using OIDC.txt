@@ -1,0 +1,23 @@
+﻿2024-06-28T08:50:25.8745951Z ##[group]Run azure/login@v1
+2024-06-28T08:50:25.8746275Z with:
+2024-06-28T08:50:25.8746591Z   client-id: ***
+2024-06-28T08:50:25.8746900Z   tenant-id: ***
+2024-06-28T08:50:25.8747231Z   subscription-id: ***
+2024-06-28T08:50:25.8747522Z   allow-no-subscriptions: true
+2024-06-28T08:50:25.8747837Z   enable-AzPSSession: false
+2024-06-28T08:50:25.8748132Z   environment: azurecloud
+2024-06-28T08:50:25.8748448Z   audience: api://AzureADTokenExchange
+2024-06-28T08:50:25.8748806Z   auth-type: SERVICE_PRINCIPAL
+2024-06-28T08:50:25.8749102Z env:
+2024-06-28T08:50:25.8749417Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.19/x64
+2024-06-28T08:50:25.8749919Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.19/x64/lib
+2024-06-28T08:50:25.8750326Z ##[endgroup]
+2024-06-28T08:50:25.9613470Z Running Azure CLI Login.
+2024-06-28T08:50:26.5173118Z [command]/usr/bin/az cloud set -n azurecloud
+2024-06-28T08:50:26.7987337Z Done setting cloud: "azurecloud"
+2024-06-28T08:50:26.9401512Z Federated token details:
+2024-06-28T08:50:26.9402505Z  issuer - https://token.actions.githubusercontent.com
+2024-06-28T08:50:26.9403417Z  subject claim - repo:smitwaman/fastapi-server:ref:refs/heads/main
+2024-06-28T08:50:26.9404102Z Attempting Azure CLI login by using OIDC...
+2024-06-28T08:50:29.0475021Z Subscription is set successfully.
+2024-06-28T08:50:29.0475776Z Azure CLI login succeeds by using OIDC.

@@ -1,0 +1,179 @@
+﻿2024-06-28T08:50:16.9705694Z Current runner version: '2.317.0'
+2024-06-28T08:50:16.9732396Z ##[group]Operating System
+2024-06-28T08:50:16.9733204Z Ubuntu
+2024-06-28T08:50:16.9733576Z 22.04.4
+2024-06-28T08:50:16.9734005Z LTS
+2024-06-28T08:50:16.9734345Z ##[endgroup]
+2024-06-28T08:50:16.9734730Z ##[group]Runner Image
+2024-06-28T08:50:16.9735221Z Image: ubuntu-22.04
+2024-06-28T08:50:16.9735645Z Version: 20240624.1.0
+2024-06-28T08:50:16.9736665Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20240624.1/images/ubuntu/Ubuntu2204-Readme.md
+2024-06-28T08:50:16.9738208Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20240624.1
+2024-06-28T08:50:16.9739081Z ##[endgroup]
+2024-06-28T08:50:16.9739508Z ##[group]Runner Image Provisioner
+2024-06-28T08:50:16.9740083Z 2.0.370.1
+2024-06-28T08:50:16.9740417Z ##[endgroup]
+2024-06-28T08:50:16.9741413Z ##[group]GITHUB_TOKEN Permissions
+2024-06-28T08:50:16.9742993Z Contents: read
+2024-06-28T08:50:16.9743457Z Metadata: read
+2024-06-28T08:50:16.9744112Z ##[endgroup]
+2024-06-28T08:50:16.9747500Z Secret source: Actions
+2024-06-28T08:50:16.9748122Z Prepare workflow directory
+2024-06-28T08:50:17.0374623Z Prepare all required actions
+2024-06-28T08:50:17.0570837Z Getting action download info
+2024-06-28T08:50:17.3670789Z Download action repository 'actions/checkout@v2' (SHA:ee0669bd1cc54295c223e0bb666b733df41de1c5)
+2024-06-28T08:50:17.4974395Z Download action repository 'actions/setup-python@v2' (SHA:e9aba2c848f5ebd159c070c61ea2c4e2b122355e)
+2024-06-28T08:50:17.5758602Z Download action repository 'azure/login@v1' (SHA:cb79c773a3cfa27f31f25eb3f677781210c9ce3d)
+2024-06-28T08:50:19.3435773Z Download action repository 'azure/webapps-deploy@v2' (SHA:8e359a3761daf647ae3fa56123a9c3aa8a51d269)
+2024-06-28T08:50:21.0849290Z Complete job name: build-and-deploy
+2024-06-28T08:50:21.1763854Z ##[group]Run azure/login@v1
+2024-06-28T08:50:21.1764250Z with:
+2024-06-28T08:50:21.1764805Z   client-id: ***
+2024-06-28T08:50:21.1765548Z   tenant-id: ***
+2024-06-28T08:50:21.1765919Z   subscription-id: ***
+2024-06-28T08:50:21.1766240Z   allow-no-subscriptions: true
+2024-06-28T08:50:21.1766579Z   enable-AzPSSession: false
+2024-06-28T08:50:21.1766880Z   environment: azurecloud
+2024-06-28T08:50:21.1767203Z   audience: api://AzureADTokenExchange
+2024-06-28T08:50:21.1767595Z   auth-type: SERVICE_PRINCIPAL
+2024-06-28T08:50:21.1767911Z ##[endgroup]
+2024-06-28T08:50:21.4158988Z Clearing azure cli accounts from the local cache.
+2024-06-28T08:50:21.4159900Z [command]/usr/bin/az account clear
+2024-06-28T08:50:25.1847508Z ##[group]Run actions/checkout@v2
+2024-06-28T08:50:25.1847943Z with:
+2024-06-28T08:50:25.1848430Z   repository: smitwaman/fastapi-server
+2024-06-28T08:50:25.1849060Z   token: ***
+2024-06-28T08:50:25.1849398Z   ssh-strict: true
+2024-06-28T08:50:25.1849855Z   persist-credentials: true
+2024-06-28T08:50:25.1850314Z   clean: true
+2024-06-28T08:50:25.1850638Z   fetch-depth: 1
+2024-06-28T08:50:25.1851065Z   lfs: false
+2024-06-28T08:50:25.1851351Z   submodules: false
+2024-06-28T08:50:25.1851729Z   set-safe-directory: true
+2024-06-28T08:50:25.1852200Z ##[endgroup]
+2024-06-28T08:50:25.3023748Z Syncing repository: smitwaman/fastapi-server
+2024-06-28T08:50:25.3026179Z ##[group]Getting Git version info
+2024-06-28T08:50:25.3027257Z Working directory is '/home/runner/work/fastapi-server/fastapi-server'
+2024-06-28T08:50:25.3028401Z [command]/usr/bin/git version
+2024-06-28T08:50:25.3144544Z git version 2.45.2
+2024-06-28T08:50:25.3168685Z ##[endgroup]
+2024-06-28T08:50:25.3184727Z Temporarily overriding HOME='/home/runner/work/_temp/0c729d30-b256-442d-ac21-401c6d2283ef' before making global git config changes
+2024-06-28T08:50:25.3185944Z Adding repository directory to the temporary git global config as a safe directory
+2024-06-28T08:50:25.3190322Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/fastapi-server/fastapi-server
+2024-06-28T08:50:25.3240460Z Deleting the contents of '/home/runner/work/fastapi-server/fastapi-server'
+2024-06-28T08:50:25.3245739Z ##[group]Initializing the repository
+2024-06-28T08:50:25.3249497Z [command]/usr/bin/git init /home/runner/work/fastapi-server/fastapi-server
+2024-06-28T08:50:25.3352164Z hint: Using 'master' as the name for the initial branch. This default branch name
+2024-06-28T08:50:25.3353327Z hint: is subject to change. To configure the initial branch name to use in all
+2024-06-28T08:50:25.3354480Z hint: of your new repositories, which will suppress this warning, call:
+2024-06-28T08:50:25.3355537Z hint:
+2024-06-28T08:50:25.3356436Z hint: 	git config --global init.defaultBranch <name>
+2024-06-28T08:50:25.3357341Z hint:
+2024-06-28T08:50:25.3358679Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2024-06-28T08:50:25.3360069Z hint: 'development'. The just-created branch can be renamed via this command:
+2024-06-28T08:50:25.3361003Z hint:
+2024-06-28T08:50:25.3361735Z hint: 	git branch -m <name>
+2024-06-28T08:50:25.3363510Z Initialized empty Git repository in /home/runner/work/fastapi-server/fastapi-server/.git/
+2024-06-28T08:50:25.3373651Z [command]/usr/bin/git remote add origin https://github.com/smitwaman/fastapi-server
+2024-06-28T08:50:25.3420805Z ##[endgroup]
+2024-06-28T08:50:25.3421905Z ##[group]Disabling automatic garbage collection
+2024-06-28T08:50:25.3424820Z [command]/usr/bin/git config --local gc.auto 0
+2024-06-28T08:50:25.3461590Z ##[endgroup]
+2024-06-28T08:50:25.3462972Z ##[group]Setting up auth
+2024-06-28T08:50:25.3468647Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-06-28T08:50:25.3507457Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-06-28T08:50:25.3888393Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-06-28T08:50:25.3931962Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-06-28T08:50:25.4192749Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2024-06-28T08:50:25.4244756Z ##[endgroup]
+2024-06-28T08:50:25.4246109Z ##[group]Fetching the repository
+2024-06-28T08:50:25.4255192Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +14544760ea288c2f99421d6bd35a1ac9480a88a5:refs/remotes/origin/main
+2024-06-28T08:50:25.6607462Z remote: Enumerating objects: 9, done.        
+2024-06-28T08:50:25.6608884Z remote: Counting objects:  11% (1/9)        
+2024-06-28T08:50:25.6609994Z remote: Counting objects:  22% (2/9)        
+2024-06-28T08:50:25.6610639Z remote: Counting objects:  33% (3/9)        
+2024-06-28T08:50:25.6611199Z remote: Counting objects:  44% (4/9)        
+2024-06-28T08:50:25.6611857Z remote: Counting objects:  55% (5/9)        
+2024-06-28T08:50:25.6612450Z remote: Counting objects:  66% (6/9)        
+2024-06-28T08:50:25.6612976Z remote: Counting objects:  77% (7/9)        
+2024-06-28T08:50:25.6613614Z remote: Counting objects:  88% (8/9)        
+2024-06-28T08:50:25.6614161Z remote: Counting objects: 100% (9/9)        
+2024-06-28T08:50:25.6614824Z remote: Counting objects: 100% (9/9), done.        
+2024-06-28T08:50:25.6615445Z remote: Compressing objects:  16% (1/6)        
+2024-06-28T08:50:25.6616053Z remote: Compressing objects:  33% (2/6)        
+2024-06-28T08:50:25.6616736Z remote: Compressing objects:  50% (3/6)        
+2024-06-28T08:50:25.6617318Z remote: Compressing objects:  66% (4/6)        
+2024-06-28T08:50:25.6617853Z remote: Compressing objects:  83% (5/6)        
+2024-06-28T08:50:25.6618508Z remote: Compressing objects: 100% (6/6)        
+2024-06-28T08:50:25.6619157Z remote: Compressing objects: 100% (6/6), done.        
+2024-06-28T08:50:25.6712693Z remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 0        
+2024-06-28T08:50:25.6806394Z From https://github.com/smitwaman/fastapi-server
+2024-06-28T08:50:25.6808119Z  * [new ref]         14544760ea288c2f99421d6bd35a1ac9480a88a5 -> origin/main
+2024-06-28T08:50:25.6843289Z ##[endgroup]
+2024-06-28T08:50:25.6844537Z ##[group]Determining the checkout info
+2024-06-28T08:50:25.6852483Z ##[endgroup]
+2024-06-28T08:50:25.6853771Z ##[group]Checking out the ref
+2024-06-28T08:50:25.6855047Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2024-06-28T08:50:25.6921244Z Switched to a new branch 'main'
+2024-06-28T08:50:25.6926904Z branch 'main' set up to track 'origin/main'.
+2024-06-28T08:50:25.6930514Z ##[endgroup]
+2024-06-28T08:50:25.6990347Z [command]/usr/bin/git log -1 --format='%H'
+2024-06-28T08:50:25.7030015Z '14544760ea288c2f99421d6bd35a1ac9480a88a5'
+2024-06-28T08:50:25.7338584Z ##[group]Run actions/setup-python@v2
+2024-06-28T08:50:25.7338968Z with:
+2024-06-28T08:50:25.7339197Z   python-version: 3.9
+2024-06-28T08:50:25.7339609Z   token: ***
+2024-06-28T08:50:25.7339842Z ##[endgroup]
+2024-06-28T08:50:25.8618136Z Successfully setup CPython (3.9.19)
+2024-06-28T08:50:25.8745965Z ##[group]Run azure/login@v1
+2024-06-28T08:50:25.8746279Z with:
+2024-06-28T08:50:25.8746594Z   client-id: ***
+2024-06-28T08:50:25.8746903Z   tenant-id: ***
+2024-06-28T08:50:25.8747234Z   subscription-id: ***
+2024-06-28T08:50:25.8747525Z   allow-no-subscriptions: true
+2024-06-28T08:50:25.8747839Z   enable-AzPSSession: false
+2024-06-28T08:50:25.8748135Z   environment: azurecloud
+2024-06-28T08:50:25.8748451Z   audience: api://AzureADTokenExchange
+2024-06-28T08:50:25.8748809Z   auth-type: SERVICE_PRINCIPAL
+2024-06-28T08:50:25.8749112Z env:
+2024-06-28T08:50:25.8749420Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.19/x64
+2024-06-28T08:50:25.8749922Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.19/x64/lib
+2024-06-28T08:50:25.8750329Z ##[endgroup]
+2024-06-28T08:50:25.9613494Z Running Azure CLI Login.
+2024-06-28T08:50:26.5173155Z [command]/usr/bin/az cloud set -n azurecloud
+2024-06-28T08:50:26.7987392Z Done setting cloud: "azurecloud"
+2024-06-28T08:50:26.9401591Z Federated token details:
+2024-06-28T08:50:26.9402529Z  issuer - https://token.actions.githubusercontent.com
+2024-06-28T08:50:26.9403422Z  subject claim - repo:smitwaman/fastapi-server:ref:refs/heads/main
+2024-06-28T08:50:26.9404105Z Attempting Azure CLI login by using OIDC...
+2024-06-28T08:50:29.0475072Z Subscription is set successfully.
+2024-06-28T08:50:29.0475783Z Azure CLI login succeeds by using OIDC.
+2024-06-28T08:50:29.0576589Z ##[warning]Unexpected input(s) 'runtime-stack', valid inputs are ['app-name', 'publish-profile', 'slot-name', 'package', 'images', 'configuration-file', 'startup-command', 'resource-group-name']
+2024-06-28T08:50:29.0589012Z ##[group]Run azure/webapps-deploy@v2
+2024-06-28T08:50:29.0589338Z with:
+2024-06-28T08:50:29.0589580Z   app-name: fastapi-server
+2024-06-28T08:50:29.0589868Z   package: .
+2024-06-28T08:50:29.0590120Z   runtime-stack: PYTHON|3.9
+2024-06-28T08:50:29.0590420Z   slot-name: production
+2024-06-28T08:50:29.0590676Z env:
+2024-06-28T08:50:29.0590997Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.19/x64
+2024-06-28T08:50:29.0591503Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.19/x64/lib
+2024-06-28T08:50:29.0591905Z ##[endgroup]
+2024-06-28T08:50:30.7213688Z ##[error]Deployment Failed, Error: Resource fastapi-server doesn't exist.
+2024-06-28T08:50:30.7336527Z Post job cleanup.
+2024-06-28T08:50:30.8369424Z [command]/usr/bin/git version
+2024-06-28T08:50:30.8423615Z git version 2.45.2
+2024-06-28T08:50:30.8470600Z Temporarily overriding HOME='/home/runner/work/_temp/9f27fc52-9599-4768-93ad-d112823f0667' before making global git config changes
+2024-06-28T08:50:30.8472176Z Adding repository directory to the temporary git global config as a safe directory
+2024-06-28T08:50:30.8476915Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/fastapi-server/fastapi-server
+2024-06-28T08:50:30.8524159Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-06-28T08:50:30.8567969Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-06-28T08:50:30.8855217Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-06-28T08:50:30.8892861Z http.https://github.com/.extraheader
+2024-06-28T08:50:30.8903640Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2024-06-28T08:50:30.8948060Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-06-28T08:50:30.9384923Z Post job cleanup.
+2024-06-28T08:50:31.0278882Z Clearing azure cli accounts from the local cache.
+2024-06-28T08:50:31.0292430Z [command]/usr/bin/az account clear
+2024-06-28T08:50:31.5022090Z Cleaning up orphan processes
+2024-06-28T08:50:31.5643990Z Terminate orphan process: pid (1934) (python3)

@@ -1,0 +1,28 @@
+﻿2024-06-28T08:50:16.9705098Z Current runner version: '2.317.0'
+2024-06-28T08:50:16.9732375Z ##[group]Operating System
+2024-06-28T08:50:16.9733197Z Ubuntu
+2024-06-28T08:50:16.9733573Z 22.04.4
+2024-06-28T08:50:16.9734002Z LTS
+2024-06-28T08:50:16.9734341Z ##[endgroup]
+2024-06-28T08:50:16.9734690Z ##[group]Runner Image
+2024-06-28T08:50:16.9735217Z Image: ubuntu-22.04
+2024-06-28T08:50:16.9735642Z Version: 20240624.1.0
+2024-06-28T08:50:16.9736661Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20240624.1/images/ubuntu/Ubuntu2204-Readme.md
+2024-06-28T08:50:16.9738204Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20240624.1
+2024-06-28T08:50:16.9739077Z ##[endgroup]
+2024-06-28T08:50:16.9739504Z ##[group]Runner Image Provisioner
+2024-06-28T08:50:16.9740079Z 2.0.370.1
+2024-06-28T08:50:16.9740414Z ##[endgroup]
+2024-06-28T08:50:16.9741410Z ##[group]GITHUB_TOKEN Permissions
+2024-06-28T08:50:16.9742980Z Contents: read
+2024-06-28T08:50:16.9743454Z Metadata: read
+2024-06-28T08:50:16.9743976Z ##[endgroup]
+2024-06-28T08:50:16.9747486Z Secret source: Actions
+2024-06-28T08:50:16.9748118Z Prepare workflow directory
+2024-06-28T08:50:17.0374605Z Prepare all required actions
+2024-06-28T08:50:17.0570798Z Getting action download info
+2024-06-28T08:50:17.3670725Z Download action repository 'actions/checkout@v2' (SHA:ee0669bd1cc54295c223e0bb666b733df41de1c5)
+2024-06-28T08:50:17.4974369Z Download action repository 'actions/setup-python@v2' (SHA:e9aba2c848f5ebd159c070c61ea2c4e2b122355e)
+2024-06-28T08:50:17.5758579Z Download action repository 'azure/login@v1' (SHA:cb79c773a3cfa27f31f25eb3f677781210c9ce3d)
+2024-06-28T08:50:19.3435740Z Download action repository 'azure/webapps-deploy@v2' (SHA:8e359a3761daf647ae3fa56123a9c3aa8a51d269)
+2024-06-28T08:50:21.0849254Z Complete job name: build-and-deploy

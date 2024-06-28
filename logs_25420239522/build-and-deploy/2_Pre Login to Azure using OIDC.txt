@@ -1,0 +1,13 @@
+﻿2024-06-28T08:50:21.1763821Z ##[group]Run azure/login@v1
+2024-06-28T08:50:21.1764245Z with:
+2024-06-28T08:50:21.1764801Z   client-id: ***
+2024-06-28T08:50:21.1765542Z   tenant-id: ***
+2024-06-28T08:50:21.1765916Z   subscription-id: ***
+2024-06-28T08:50:21.1766237Z   allow-no-subscriptions: true
+2024-06-28T08:50:21.1766569Z   enable-AzPSSession: false
+2024-06-28T08:50:21.1766878Z   environment: azurecloud
+2024-06-28T08:50:21.1767200Z   audience: api://AzureADTokenExchange
+2024-06-28T08:50:21.1767582Z   auth-type: SERVICE_PRINCIPAL
+2024-06-28T08:50:21.1767908Z ##[endgroup]
+2024-06-28T08:50:21.4158926Z Clearing azure cli accounts from the local cache.
+2024-06-28T08:50:21.4159887Z [command]/usr/bin/az account clear

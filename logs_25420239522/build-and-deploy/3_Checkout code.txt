@@ -1,0 +1,80 @@
+﻿2024-06-28T08:50:25.1847492Z ##[group]Run actions/checkout@v2
+2024-06-28T08:50:25.1847939Z with:
+2024-06-28T08:50:25.1848426Z   repository: smitwaman/fastapi-server
+2024-06-28T08:50:25.1849056Z   token: ***
+2024-06-28T08:50:25.1849395Z   ssh-strict: true
+2024-06-28T08:50:25.1849852Z   persist-credentials: true
+2024-06-28T08:50:25.1850312Z   clean: true
+2024-06-28T08:50:25.1850635Z   fetch-depth: 1
+2024-06-28T08:50:25.1851024Z   lfs: false
+2024-06-28T08:50:25.1851348Z   submodules: false
+2024-06-28T08:50:25.1851727Z   set-safe-directory: true
+2024-06-28T08:50:25.1852196Z ##[endgroup]
+2024-06-28T08:50:25.3023713Z Syncing repository: smitwaman/fastapi-server
+2024-06-28T08:50:25.3026161Z ##[group]Getting Git version info
+2024-06-28T08:50:25.3027248Z Working directory is '/home/runner/work/fastapi-server/fastapi-server'
+2024-06-28T08:50:25.3028389Z [command]/usr/bin/git version
+2024-06-28T08:50:25.3144530Z git version 2.45.2
+2024-06-28T08:50:25.3168634Z ##[endgroup]
+2024-06-28T08:50:25.3184608Z Temporarily overriding HOME='/home/runner/work/_temp/0c729d30-b256-442d-ac21-401c6d2283ef' before making global git config changes
+2024-06-28T08:50:25.3185939Z Adding repository directory to the temporary git global config as a safe directory
+2024-06-28T08:50:25.3190311Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/fastapi-server/fastapi-server
+2024-06-28T08:50:25.3240435Z Deleting the contents of '/home/runner/work/fastapi-server/fastapi-server'
+2024-06-28T08:50:25.3245725Z ##[group]Initializing the repository
+2024-06-28T08:50:25.3249485Z [command]/usr/bin/git init /home/runner/work/fastapi-server/fastapi-server
+2024-06-28T08:50:25.3352144Z hint: Using 'master' as the name for the initial branch. This default branch name
+2024-06-28T08:50:25.3353319Z hint: is subject to change. To configure the initial branch name to use in all
+2024-06-28T08:50:25.3354474Z hint: of your new repositories, which will suppress this warning, call:
+2024-06-28T08:50:25.3355529Z hint:
+2024-06-28T08:50:25.3356401Z hint: 	git config --global init.defaultBranch <name>
+2024-06-28T08:50:25.3357330Z hint:
+2024-06-28T08:50:25.3358669Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2024-06-28T08:50:25.3360016Z hint: 'development'. The just-created branch can be renamed via this command:
+2024-06-28T08:50:25.3360998Z hint:
+2024-06-28T08:50:25.3361730Z hint: 	git branch -m <name>
+2024-06-28T08:50:25.3363501Z Initialized empty Git repository in /home/runner/work/fastapi-server/fastapi-server/.git/
+2024-06-28T08:50:25.3373627Z [command]/usr/bin/git remote add origin https://github.com/smitwaman/fastapi-server
+2024-06-28T08:50:25.3420790Z ##[endgroup]
+2024-06-28T08:50:25.3421898Z ##[group]Disabling automatic garbage collection
+2024-06-28T08:50:25.3424810Z [command]/usr/bin/git config --local gc.auto 0
+2024-06-28T08:50:25.3461576Z ##[endgroup]
+2024-06-28T08:50:25.3462962Z ##[group]Setting up auth
+2024-06-28T08:50:25.3468637Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-06-28T08:50:25.3507422Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-06-28T08:50:25.3888352Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-06-28T08:50:25.3931927Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-06-28T08:50:25.4192695Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2024-06-28T08:50:25.4244724Z ##[endgroup]
+2024-06-28T08:50:25.4246095Z ##[group]Fetching the repository
+2024-06-28T08:50:25.4254838Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +14544760ea288c2f99421d6bd35a1ac9480a88a5:refs/remotes/origin/main
+2024-06-28T08:50:25.6607405Z remote: Enumerating objects: 9, done.        
+2024-06-28T08:50:25.6608873Z remote: Counting objects:  11% (1/9)        
+2024-06-28T08:50:25.6609988Z remote: Counting objects:  22% (2/9)        
+2024-06-28T08:50:25.6610636Z remote: Counting objects:  33% (3/9)        
+2024-06-28T08:50:25.6611196Z remote: Counting objects:  44% (4/9)        
+2024-06-28T08:50:25.6611854Z remote: Counting objects:  55% (5/9)        
+2024-06-28T08:50:25.6612448Z remote: Counting objects:  66% (6/9)        
+2024-06-28T08:50:25.6612973Z remote: Counting objects:  77% (7/9)        
+2024-06-28T08:50:25.6613612Z remote: Counting objects:  88% (8/9)        
+2024-06-28T08:50:25.6614158Z remote: Counting objects: 100% (9/9)        
+2024-06-28T08:50:25.6614821Z remote: Counting objects: 100% (9/9), done.        
+2024-06-28T08:50:25.6615442Z remote: Compressing objects:  16% (1/6)        
+2024-06-28T08:50:25.6616051Z remote: Compressing objects:  33% (2/6)        
+2024-06-28T08:50:25.6616718Z remote: Compressing objects:  50% (3/6)        
+2024-06-28T08:50:25.6617316Z remote: Compressing objects:  66% (4/6)        
+2024-06-28T08:50:25.6617850Z remote: Compressing objects:  83% (5/6)        
+2024-06-28T08:50:25.6618505Z remote: Compressing objects: 100% (6/6)        
+2024-06-28T08:50:25.6619154Z remote: Compressing objects: 100% (6/6), done.        
+2024-06-28T08:50:25.6712672Z remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 0        
+2024-06-28T08:50:25.6806363Z From https://github.com/smitwaman/fastapi-server
+2024-06-28T08:50:25.6808109Z  * [new ref]         14544760ea288c2f99421d6bd35a1ac9480a88a5 -> origin/main
+2024-06-28T08:50:25.6843273Z ##[endgroup]
+2024-06-28T08:50:25.6844311Z ##[group]Determining the checkout info
+2024-06-28T08:50:25.6852468Z ##[endgroup]
+2024-06-28T08:50:25.6853759Z ##[group]Checking out the ref
+2024-06-28T08:50:25.6855037Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2024-06-28T08:50:25.6921212Z Switched to a new branch 'main'
+2024-06-28T08:50:25.6926868Z branch 'main' set up to track 'origin/main'.
+2024-06-28T08:50:25.6930502Z ##[endgroup]
+2024-06-28T08:50:25.6990325Z [command]/usr/bin/git log -1 --format='%H'
+2024-06-28T08:50:25.7029997Z '14544760ea288c2f99421d6bd35a1ac9480a88a5'
