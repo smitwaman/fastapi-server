@@ -63,5 +63,5 @@
 1. **Browse Your Web App**: Click on the URL provided for your Web App (e.g., `https://my-fastapi-app.azurewebsites.net`).
 
 2. **Check Deployment**: Ensure that your FastAPI application is running by navigating to the `/docs` endpoint to view the automatically generated API documentation (e.g., `https://my-fastapi-app.azurewebsites.net/docs`).
-
+   ![webapp](https://github.com/smitwaman/fastapi-server/blob/main/PNG/Screenshot%202024-06-28%20165701.png)
 
