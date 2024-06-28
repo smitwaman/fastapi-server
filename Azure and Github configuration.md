@@ -1,8 +1,5 @@
 # fastapi-server
-Demo Server
-
-In this demo we are deploying fasyapi server
-For deploying "Hello world" on it using Github CICD pipeline.
+In this demo we are deploying fasyapi server, For deploying "Hello world" on it using Github CICD pipeline.
 
 Step to achieve this target
 
