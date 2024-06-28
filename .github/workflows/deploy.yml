@@ -33,9 +33,9 @@ jobs:
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'your-web-app-name'
+        app-name: 'fastapi-server'
         package: .
         runtime-stack: 'PYTHON|3.9'
 
     - name: Restart Azure Web App
-      run: az webapp restart --name your-web-app-name --resource-group your-resource-group
+      run: az webapp restart --name fastapi-server --resource-group fastapi-server
