@@ -54,7 +54,7 @@
 ### Step 6: Configure Application Settings
 
 1. **Application Settings**: Go to "Configuration" under "Settings" in the left-hand menu.
-   - Add any necessary environment variables for your FastAPI app (e.g., database connection strings, secret keys).
+   - Add any necessary environment variables for your FastAPI app such as 
 
 2. **Save Changes**: Click "Save" after adding the necessary settings.
 
