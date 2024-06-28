@@ -15,7 +15,7 @@
 1. **Subscription and Resource Group**:
    - Select your subscription.
    - Create a new resource group or select an existing one.
-
+[webapp interface](https://github.com/smitwaman/fastapi-server/blob/main/PNG/Screenshot%202024-06-28%20143857.png)
 2. **Instance Details**:
    - Name: Enter a globally unique name for your web app (e.g., `my-fastapi-app`).
    - Publish: Select "Code".
