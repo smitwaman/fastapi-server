@@ -64,11 +64,4 @@ Sure, here are the graphical steps to configure an Azure Web App server for depl
 
 2. **Check Deployment**: Ensure that your FastAPI application is running by navigating to the `/docs` endpoint to view the automatically generated API documentation (e.g., `https://my-fastapi-app.azurewebsites.net/docs`).
 
-### Summary
 
-1. **Create a Web App**: Use the Azure Portal to create a new Web App with the appropriate settings.
-2. **Deploy from GitHub**: Configure the deployment source to be your GitHub repository.
-3. **Configure Settings**: Add necessary environment variables and settings in the Azure Portal.
-4. **Access the App**: Navigate to the provided URL to access your deployed FastAPI application.
-
-By following these graphical steps, you should be able to deploy your FastAPI application to Azure Web App successfully.
