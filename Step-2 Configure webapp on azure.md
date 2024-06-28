@@ -1,4 +1,4 @@
-Sure, here are the graphical steps to configure an Azure Web App server for deploying a FastAPI application:
+
 
 ### Step 1: Create an Azure Web App
 
